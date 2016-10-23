@@ -11,6 +11,8 @@ import org.newdawn.slick.Image;
 import org.newdawn.slick.SlickException;
 import org.newdawn.slick.geom.Rectangle;
 
+import at.HulMab.TankGame.TankGame;
+
 public class TankGame extends BasicGame {
 
 	private TankActor tank;
@@ -20,7 +22,7 @@ public class TankGame extends BasicGame {
 	private boolean collides;
 	private ArrayList<Rectangle> soldHitboxes;
 	private Random rand;
-	private Rectangle soldierTest;
+	//private Rectangle soldierTest;
 
 	public TankGame() {
 		super("TankGame");
