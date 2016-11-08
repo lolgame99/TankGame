@@ -20,10 +20,10 @@ public class TankActor {
 		this.x = x;
 		this.y = y;
 		
-		SpriteSheet tankSprite = new SpriteSheet("testdata/scroller/tank_sprite.png", 32, 32, new Color(255,255,255));
+		SpriteSheet tankSprite = new SpriteSheet("testdata/scroller/sprites.png", 32, 32, new Color(255,255,255));
 		this.animation = new Animation();
 		for (int i=0;i<7;i++) {
-			animation.addFrame(tankSprite.getSprite(i,0), 150);
+			animation.addFrame(tankSprite.getSprite(i,1), 150);
 		this.hitbox = new TankHitbox(this.x, this.y);
 		}
 	}
